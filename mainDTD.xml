@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE College SYSTEM "college.dtd">
+<College>
+    <!-- Administrator Example -->
+    <Administrator AdminID="A1">
+        <Prefix>Dr.</Prefix>
+        <First_Name>John</First_Name>
+        <Middle_Name>Michael</Middle_Name>
+        <Last_Name>Doe</Last_Name>
+        <Phone_No>1234567890</Phone_No>
+        <Email>john.doe@college.edu</Email>
+        <Designation>Principal</Designation>
+        <Qualification>PhD in Education</Qualification>
+        <Date_of_Appointment>2010-08-15</Date_of_Appointment>
+        <Password>admin123</Password>
+    </Administrator>
+
+    <!-- Student Example -->
+    <Student RollNo="S1001">
+        <First_Name>Jane</First_Name>
+        <Middle_Name>Emily</Middle_Name>
+        <Last_Name>Smith</Last_Name>
+        <Gender>Female</Gender>
+        <Phone_No>0987654321</Phone_No>
+        <Email>jane.smith@student.college.edu</Email>
+        <DepartmentID>101</DepartmentID>
+        <ProgrammeID>501</ProgrammeID>
+        <Attendance>92.5</Attendance>
+        <Password>student123</Password>
+    </Student>
+
+    <!-- Teacher Example -->
+    <Teacher TeacherID="T2001">
+        <First_Name>Albert</First_Name>
+        <Middle_Name>E</Middle_Name>
+        <Last_Name>Einstein</Last_Name>
+        <Gender>Male</Gender>
+        <Phone_No>5551234567</Phone_No>
+        <Email>albert.einstein@college.edu</Email>
+        <DepartmentID>101</DepartmentID>
+        <Qualification>PhD in Physics</Qualification>
+        <NET_Qualified>Yes</NET_Qualified>
+        <Designation>Associate Professor</Designation>
+        <Date_of_Joining>2005-07-01</Date_of_Joining>
+        <Password>teach123</Password>
+    </Teacher>
+
+    <!-- Department Example -->
+    <Department DepartmentID="D101">
+        <HoD_ID>T2001</HoD_ID>
+        <Department_Email>physics@college.edu</Department_Email>
+        <No_of_Faculty>12</No_of_Faculty>
+        <Dept_Library>true</Dept_Library>
+        <Location>Building A, Room 101</Location>
+        <Year_of_Estb>1995-09-01</Year_of_Estb>
+        <Dept_Website>http://college.edu/departments/physics</Dept_Website>
+        <No_of_Research_Papers>45</No_of_Research_Papers>
+    </Department>
+
+    <!-- Programme Example -->
+    <Programme ProgrammeID="P501">
+        <ProgrammeName>BSc Physics</ProgrammeName>
+        <DepartmentID>D101</DepartmentID>
+        <No_of_Students>120</No_of_Students>
+        <No_of_Faculty>12</No_of_Faculty>
+        <Degree>UG</Degree>
+        <No_of_Years>3</No_of_Years>
+        <System>Semester</System>
+        <Max_Credits>120</Max_Credits>
+    </Programme>
+
+    <!-- Admission Example -->
+    <Admission RegistrationNo="R3001">
+        <First_Name>Alice</First_Name>
+        <Middle_Name>Marie</Middle_Name>
+        <Last_Name>Johnson</Last_Name>
+        <Phone_No>6667891234</Phone_No>
+        <Email>alice.johnson@applicant.com</Email>
+        <Class10_Perc>89.5</Class10_Perc>
+        <Class12_Perc>92.0</Class12_Perc>
+        <CUET_Score>85.7</CUET_Score>
+        <ProgrammeID>P501</ProgrammeID>
+        <Admission_status>Pending</Admission_status>
+    </Admission>
+
+    <!-- Club/Cell/Committee Example -->
+    <ClubCellCommittee CCC_ID="C4001">
+        <CCC_Name>Debate Club</CCC_Name>
+        <CCC_Agenda>Promote critical thinking and public speaking</CCC_Agenda>
+        <Convener_ID>T2002</Convener_ID>
+        <Co_Convener_ID>T2003</Co_Convener_ID>
+        <President_Name>S1002</President_Name>
+        <Secretary_Name>S1003</Secretary_Name>
+        <Treasurer_Name>S1004</Treasurer_Name>
+        <Date_of_Estb>2008-01-20</Date_of_Estb>
+        <No_of_Members>30</No_of_Members>
+    </ClubCellCommittee>
+
+    <!-- Library Example -->
+    <Library BookID="B7001">
+        <Category>Science</Category>
+        <DepartmentID>D101</DepartmentID>
+        <Borrowable_Status>true</Borrowable_Status>
+        <Number_of_copies>5</Number_of_copies>
+        <Number_of_Pages>350</Number_of_Pages>
+        <Author1>Isaac Newton</Author1>
+        <Author2></Author2>
+        <Author3></Author3>
+        <ISBN>9781234567890</ISBN>
+    </Library>
+
+    <!-- Research Example -->
+    <Research PublicationID="P8001">
+        <PublicationName>Quantum Mechanics</PublicationName>
+        <PublicationSynopsis>A comprehensive study on quantum mechanics</PublicationSynopsis>
+        <ResearchArea>Physics</ResearchArea>
+        <AuthorID1>T2001</AuthorID1>
+        <AuthorID2></AuthorID2>
+        <AuthorID3></AuthorID3>
+        <EtAl_Status>false</EtAl_Status>
+        <Link>http://research.college.edu/publications/quantum-mechanics</Link>
+        <Verified_Status>true</Verified_Status>
+    </Research>
+
+    <!-- Alumni Example -->
+    <Alumni AlumniID="A9001">
+        <RollNo>S1005</RollNo>
+        <DepartmentID>D101</DepartmentID>
+        <ProgrammeID>P501</ProgrammeID>
+        <Year_of_Graduation>2020</Year_of_Graduation>
+        <Alum_Email>alumni.johndoe@gmail.com</Alum_Email>
+        <Alum_Phone_No>7774567890</Alum_Phone_No>
+        <Highest_Qualification>PhD</Highest_Qualification>
+        <Current_Occupation>Research Scientist</Current_Occupation>
+        <Testimonial>My time at the college was transformative and invaluable.</Testimonial>
+    </Alumni>
+</College>

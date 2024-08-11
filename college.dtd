@@ -1,0 +1,109 @@
+<!ELEMENT College (Administrator+, Student+, Teacher+, Department+, Programme+, Admission+, ClubCellCommittee+, Library+, Research+, Alumni+)>
+
+<!-- Administrator Entity -->
+<!ELEMENT Administrator (Prefix, First_Name, Middle_Name?, Last_Name, Phone_No, Email, Designation, Qualification, Date_of_Appointment, Password)>
+<!ATTLIST Administrator AdminID ID #REQUIRED>
+<!ELEMENT Prefix (#PCDATA)>
+<!ELEMENT First_Name (#PCDATA)>
+<!ELEMENT Middle_Name (#PCDATA)>
+<!ELEMENT Last_Name (#PCDATA)>
+<!ELEMENT Phone_No (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT Designation (#PCDATA)>
+<!ELEMENT Qualification (#PCDATA)>
+<!ELEMENT Date_of_Appointment (#PCDATA)>
+<!ELEMENT Password (#PCDATA)>
+
+<!-- Student Entity -->
+<!ELEMENT Student (First_Name, Middle_Name?, Last_Name, Gender, Phone_No, Email, DepartmentID, ProgrammeID, Attendance, Password)>
+<!ATTLIST Student RollNo ID #REQUIRED>
+<!ELEMENT Gender (#PCDATA)>
+<!ELEMENT DepartmentID (#PCDATA)>
+<!ELEMENT ProgrammeID (#PCDATA)>
+<!ELEMENT Attendance (#PCDATA)>
+
+<!-- Teacher Entity -->
+<!ELEMENT Teacher (First_Name, Middle_Name?, Last_Name, Gender, Phone_No, Email, DepartmentID, Qualification, NET_Qualified, Designation, Date_of_Joining, Password)>
+<!ATTLIST Teacher TeacherID ID #REQUIRED>
+<!ELEMENT NET_Qualified (#PCDATA)>
+<!ELEMENT TeacherDesignation (#PCDATA)>
+<!ELEMENT Date_of_Joining (#PCDATA)>
+
+<!-- Department Entity -->
+<!ELEMENT Department (HoD_ID, Department_Email, No_of_Faculty, Dept_Library, Location, Year_of_Estb, Dept_Website, No_of_Research_Papers)>
+<!ATTLIST Department DepartmentID ID #REQUIRED><!ELEMENT HoD_ID (#PCDATA)>
+<!ELEMENT Department_Email (#PCDATA)>
+<!ELEMENT No_of_Faculty (#PCDATA)>
+<!ELEMENT Dept_Library (#PCDATA)>
+<!ELEMENT Location (#PCDATA)>
+<!ELEMENT Year_of_Estb (#PCDATA)>
+<!ELEMENT Dept_Website (#PCDATA)>
+<!ELEMENT No_of_Research_Papers (#PCDATA)>
+
+<!-- Programme Entity -->
+<!ELEMENT Programme (ProgrammeName, DepartmentID, No_of_Students, No_of_Faculty, Degree, No_of_Years, System, Max_Credits)>
+<!ATTLIST Programme ProgrammeID ID #REQUIRED>
+<!ELEMENT ProgrammeName (#PCDATA)>
+<!ELEMENT No_of_Students (#PCDATA)>
+<!ELEMENT Degree (#PCDATA)>
+<!ELEMENT No_of_Years (#PCDATA)>
+<!ELEMENT System (#PCDATA)>
+<!ELEMENT Max_Credits (#PCDATA)>
+
+<!-- Admission Entity -->
+<!ELEMENT Admission (First_Name, Middle_Name?, Last_Name, Phone_No, Email, Class10_Perc, Class11_Perc?, Class12_Perc, CUET_Score, ProgrammeID, Admission_status)>
+<!ATTLIST Admission RegistrationNo ID #REQUIRED>
+<!ELEMENT Class10_Perc (#PCDATA)>
+<!ELEMENT Class11_Perc (#PCDATA)>
+<!ELEMENT Class12_Perc (#PCDATA)>
+<!ELEMENT CUET_Score (#PCDATA)>
+<!ELEMENT Admission_status (#PCDATA)>
+
+<!-- Club/Cell/Committee Entity -->
+<!ELEMENT ClubCellCommittee (CCC_Name, CCC_Agenda, Convener_ID, Co_Convener_ID?, President_Name?, Secretary_Name?, Treasurer_Name?, Date_of_Estb, No_of_Members)>
+<!ATTLIST ClubCellCommittee CCC_ID ID #REQUIRED>
+<!ELEMENT CCC_Name (#PCDATA)>
+<!ELEMENT CCC_Agenda (#PCDATA)>
+<!ELEMENT Convener_ID (#PCDATA)>
+<!ELEMENT Co_Convener_ID (#PCDATA)>
+<!ELEMENT President_Name (#PCDATA)>
+<!ELEMENT Secretary_Name (#PCDATA)>
+<!ELEMENT Treasurer_Name (#PCDATA)>
+<!ELEMENT Date_of_Estb (#PCDATA)>
+<!ELEMENT No_of_Members (#PCDATA)>
+
+<!-- Library Entity -->
+<!ELEMENT Library (Category, DepartmentID, Borrowable_Status, Number_of_copies, Number_of_Pages, Author1, Author2?, Author3?, ISBN)>
+<!ATTLIST Library BookID ID #REQUIRED>
+<!ELEMENT Category (#PCDATA)>
+<!ELEMENT Borrowable_Status (#PCDATA)>
+<!ELEMENT Number_of_copies (#PCDATA)>
+<!ELEMENT Number_of_Pages (#PCDATA)>
+<!ELEMENT Author1 (#PCDATA)>
+<!ELEMENT Author2 (#PCDATA)>
+<!ELEMENT Author3 (#PCDATA)>
+<!ELEMENT ISBN (#PCDATA)>
+
+<!-- Research Entity -->
+<!ELEMENT Research (PublicationName, PublicationSynopsis, ResearchArea, AuthorID1, AuthorID2?, AuthorID3?, EtAl_Status, Link, Verified_Status)>
+<!ATTLIST Research PublicationID ID #REQUIRED>
+<!ELEMENT PublicationName (#PCDATA)>
+<!ELEMENT PublicationSynopsis (#PCDATA)>
+<!ELEMENT ResearchArea (#PCDATA)>
+<!ELEMENT AuthorID1 (#PCDATA)>
+<!ELEMENT AuthorID2 (#PCDATA)>
+<!ELEMENT AuthorID3 (#PCDATA)>
+<!ELEMENT EtAl_Status (#PCDATA)>
+<!ELEMENT Link (#PCDATA)>
+<!ELEMENT Verified_Status (#PCDATA)>
+
+<!-- Alumni Entity -->
+<!ELEMENT Alumni (RollNo, DepartmentID, ProgrammeID, Year_of_Graduation, Alum_Email, Alum_Phone_No, Highest_Qualification, Current_Occupation, Testimonial?)>
+<!ATTLIST Alumni AlumniID ID #REQUIRED>
+<!ELEMENT RollNo (#PCDATA)>
+<!ELEMENT Year_of_Graduation (#PCDATA)>
+<!ELEMENT Alum_Email (#PCDATA)>
+<!ELEMENT Alum_Phone_No (#PCDATA)>
+<!ELEMENT Highest_Qualification (#PCDATA)>
+<!ELEMENT Current_Occupation (#PCDATA)>
+<!ELEMENT Testimonial (#PCDATA)>
