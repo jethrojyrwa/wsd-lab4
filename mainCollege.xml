@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="college.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
-<?xml-stylesheet href="transform.xsl" type="text/xsl"?>
+<?xml-stylesheet href="table.xsl" type="text/xsl"?>
 <College
         xmlns="http://www.bostoncollege.edu.us/college"
         xmlns:bcu="http://www.bostoncollege.edu.us/college"
